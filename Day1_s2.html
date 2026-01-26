@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day 1 (S2) : AIDS FULL STACK WORKSHOP USING JAVA</title>
+
+    <!-- Internal CSS -->
+    <style>
+
+        /* ========== Types of Selectors ========== */
+
+        /* 1. Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: purple;
+        }
+
+        /* 2. Class-type Selector (works with div container) */
+        .block1{
+            height: 60px;
+            background-color: aqua;
+        }
+
+        /* 3. Element type selector */
+        h1{
+            float: left;
+            margin-left: 20px;
+            line-height: 60px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+        }
+
+        /* 4. Group type selector */
+        h1, a{
+            text-decoration: none;
+        }
+
+        /* 5. ID-type Selector */
+        #mainImage{
+            display: block;
+            margin: 40px auto;
+            width: 300px;
+            border: 3px solid purple;
+        }
+
+        /* ========== Pseudo Classes (Selectors) ========== */
+
+        a:hover{
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="block1">
+        <h1><a href="https://www.amazon.in/">Home</a></h1>
+        <h1><a href="https://code.visualstudio.com/download">About Us</a></h1>
+        <h1><a href="https://www.geeksforgeeks.org/">Contact Us</a></h1>
+        <h1><a href="https://www.instagram.com/">Feedback</a></h1>
+        <h1><a href="https://www.geeksforgeeks.org/">Review</a></h1>
+    </div>
+
+    <img src="assets/img1.jfif" id="mainImage" alt="Sample Image">
+
+</body>
+</html>
