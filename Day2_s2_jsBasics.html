@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 (session 2) : JS Basics</title>
+</head>
+
+<body>
+
+    <p id="text">This is JS</p>
+    <h1 id="header">Welcome to JS</h1>
+    <h1 id="h1" style="background-color: yellow;"></h1>
+
+    <script>
+        // Using var
+        var a = 90;
+        var b = 90;
+        var sum = a + b;
+
+        document.write("<h2>Using var</h2>");
+        document.write("a is: " + a + "<br>");
+        document.write("b is: " + b + "<br>");
+        document.write("Sum is: " + sum + "<br><br>");
+
+        // Using let
+        let c = 90;
+        let d = 90;
+        let sub = c - d;
+
+        document.write("<h2>Using let</h2>");
+        document.write("c is: " + c + "<br>");
+        document.write("d is: " + d + "<br>");
+        document.write("Subtraction is: " + sub + "<br><br>");
+
+        // String and float
+        let name = "MET BKC";
+        let f = 9.8;
+
+        document.write("Name is: " + name + "<br>");
+        document.write("Float value: " + f + "<br><br>");
+
+        // Console and alert
+        let k = 9;
+        console.log(k);
+        alert("Welcome to JS");
+
+        // DOM manipulation
+        document.getElementById("text").innerHTML = "<h2>Welcome JS</h2>";
+        document.getElementById("header").style.color = "blue";
+        document.getElementById("h1").innerText = "Raj";
+
+        // Even or Odd
+        let n = 6;
+        if(n % 2 == 0){
+            document.write("Number is Even");
+        } else {
+            document.write("Number is Odd");
+        }
+    </script>
+
+</body>
+</html>
