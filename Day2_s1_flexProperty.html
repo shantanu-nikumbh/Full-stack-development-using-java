@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 (session 1) : Flex Property</title>
+
+    <style>
+        .block1{
+            display: flex;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .card{
+            width: 200px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        .card:hover{
+            width: 220px;
+            height: 320px;
+        }
+
+        img{
+            width: 100px;
+        }
+
+        a{
+            background-color: blueviolet;
+            color: white;
+            padding: 6px;
+            text-decoration: none;
+        }
+
+        a:hover{
+            background-color: aqua;
+            color: black;
+        }
+
+        a:visited{
+            color: green;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="block1">
+
+        <!-- Card 1 : JavaScript -->
+        <div class="card">
+            <img src="../assets/js.png" alt="img1">
+            <p>
+                JavaScript is a programming language used to make web pages interactive. 
+                It is used for animations, validations, and dynamic content on websites.
+            </p>
+        </div>
+
+        <!-- Card 2 : HTML -->
+        <div class="card">
+            <img src="../assets/html.png" alt="img2">
+            <p>
+                HTML (HyperText Markup Language) is used to create the structure of web pages. 
+                It defines headings, paragraphs, images, and links.
+            </p>
+        </div>
+
+        <!-- Card 3 : CSS -->
+        <div class="card">
+            <img src="../assets/css.png" alt="img3">
+            <p>
+                CSS (Cascading Style Sheets) is used to style web pages. 
+                It controls colors, layouts, fonts, and overall design of the website.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
