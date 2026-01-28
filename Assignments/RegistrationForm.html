@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(to right,#667eea,#764ba2);
+}
+
+form{
+    margin-top : 13px;
+    background:white;
+    padding:30px 35px;
+    width:380px;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#333;
+}
+
+label{
+    font-weight:bold;
+    display:block;
+    margin-top:12px;
+    margin-bottom:5px;
+}
+
+input, textarea{
+    width:100%;
+    padding:8px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    outline:none;
+}
+
+textarea{
+    resize:none;
+    height:70px;
+}
+
+/* Radio & Checkbox group */
+.option-group{
+    margin-top:8px;
+}
+
+.option-group label{
+    font-weight:normal;
+    margin-right:10px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    margin-top:18px;
+    border:none;
+    border-radius:6px;
+    background:#667eea;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#5563c1;
+}
+</style>
+</head>
+
+<body>
+
+<form>
+    <h2>Registration Form</h2>
+
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" name="firstName" required>
+
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="lastName" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="contact">Contact Number</label>
+    <input type="tel" id="contact" name="contact" required>
+
+    <label for="address">Address</label>
+    <textarea id="address" name="address"></textarea>
+
+    <label>Category</label>
+    <div class="option-group">
+        <label><input type="radio" name="category" value="Open"> Open</label>
+        <label><input type="radio" name="category" value="OBC"> OBC</label>
+        <label><input type="radio" name="category" value="SC"> SC</label>
+        <label><input type="radio" name="category" value="ST"> ST</label>
+    </div>
+
+    <label>Languages Known</label>
+    <div class="option-group">
+        <label><input type="checkbox" name="lang" value="Python"> Python</label>
+        <label><input type="checkbox" name="lang" value="C++"> C++</label>
+        <label><input type="checkbox" name="lang" value="C"> C</label>
+        <label><input type="checkbox" name="lang" value="Java"> Java</label>
+    </div>
+
+    <label for="pass">Password</label>
+    <input type="password" id="pass" name="pass" required>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
